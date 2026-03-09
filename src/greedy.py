@@ -1,4 +1,5 @@
 # greedy.py
+from collections import deque
 
 class Greedy:
     def __init__(self, k: int, requests: list):
@@ -6,11 +7,15 @@ class Greedy:
         self.sequence = requests
         
     
-    def fifo(self): # slide 39
+    def fifo(self) -> int:  # slide 39
+        cache = deque()
+        misses = 0
+        
+        
         pass
     
-    def lru(self): # slide 39
+    def lru(self) -> int: # slide 39
         pass
     
-    def optff(self): # slide 40
+    def optff(self) -> int: # slide 40
         pass
